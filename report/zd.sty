@@ -1,0 +1,35 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{zd}
+\RequirePackage{amsmath, amsthm, amssymb}
+
+%% Variables
+\newif\ifzedioneside\zedionesidetrue
+\newif\ifzediblack\zediblackfalse
+\newif\ifzediframed\zediframedtrue
+
+%% Options
+
+\DeclareOption{book}{\zedionesidefalse}
+\DeclareOption{black}{\zediblacktrue}
+\DeclareOption*{\zediframedtrue}
+\ProcessOptions\relax
+
+%% Shortcuts
+\newcommand{\CC}{\mathbb C}
+\newcommand{\FF}{\mathbb F}
+\newcommand{\NN}{\mathbb N}
+\newcommand{\QQ}{\mathbb Q}
+\newcommand{\RR}{\mathbb R}
+\newcommand{\ZZ}{\mathbb Z}
+\newcommand{\EE}{\mathbb E}
+
+
+\newenvironment{soln}{\begin{proof}[Solution]}{\end{proof}}
+
+%% Page Setup
+\RequirePackage{stylepkg/zd_page}
+
+%% Styling
+\RequirePackage{stylepkg/zd_style}
+
+\endinput
