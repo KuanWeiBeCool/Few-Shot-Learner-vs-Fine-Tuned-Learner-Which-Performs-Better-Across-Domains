@@ -6,3 +6,11 @@ Source code for model architectures was adapted from
 - https://github.com/thunlp/OpenNRE/tree/master/opennre for REDN
 
 The model checkpoints and datasets are not included in this repository.
+
+## Key Results
+
+![SemEval](Image/semeval.png)
+
+![NYT10](Image/nyt10.png)
+
+![PubMed](Image/pubmed.png)
